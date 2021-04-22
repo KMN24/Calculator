@@ -1,0 +1,193 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity"
+    android:background="@color/dark">
+
+    <TextView
+        android:id="@+id/tv_expression"
+        android:layout_width="match_parent"
+        android:textSize="22sp"
+        android:textColor="@color/lightBrown"
+        android:layout_margin="10dp"
+        android:layout_height="125dp" />
+
+    <TextView
+        android:id="@+id/tv_result"
+        android:layout_width="match_parent"
+        android:layout_height="75dp"
+        android:textSize="26sp"
+        android:layout_margin="10dp"
+        android:textColor="@color/lightBrown"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/btn_ac"
+                style="@style/ActionBtn"
+                android:text="AC"
+                android:onClick="onClickAC"/>
+
+            <Button
+                android:id="@+id/btn_LeftParenthesis"
+                style="@style/ActionBtn"
+                android:text="("
+                android:onClick="onClickLeftParenthesis"/>
+
+            <Button
+                android:id="@+id/btn_RightParenthesis"
+                style="@style/ActionBtn"
+                android:text=")"
+                android:onClick="onClickRightParenthesis"/>
+
+            <Button
+                android:id="@+id/btn_dividing"
+                style="@style/ActionBtn"
+                android:text="/"
+                android:onClick="onClickDividing"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/btn_num_7"
+                style="@style/NumbersBtn"
+                android:text="7"
+                android:onClick="onClickNum7"/>
+
+            <Button
+                android:id="@+id/btn_num_8"
+                style="@style/NumbersBtn"
+                android:text="8"
+                android:onClick="onClickNum8"/>
+
+            <Button
+                android:id="@+id/btn_num_9"
+                style="@style/NumbersBtn"
+                android:text="9"
+                android:onClick="onClickNum9"/>
+
+            <Button
+                android:id="@+id/btn_multiplication"
+                style="@style/ActionBtn"
+                android:text="*"
+                android:onClick="onClickMultiplication"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/btn_num_4"
+                style="@style/NumbersBtn"
+                android:text="4"
+                android:onClick="onClickNum4"/>
+
+            <Button
+                android:id="@+id/btn_num_5"
+                style="@style/NumbersBtn"
+                android:text="5"
+                android:onClick="onClickNum5"/>
+
+            <Button
+                android:id="@+id/btn_num_6"
+                style="@style/NumbersBtn"
+                android:text="6"
+                android:onClick="onClickNum6"/>
+
+            <Button
+                android:id="@+id/btn_subtraction"
+                style="@style/ActionBtn"
+                android:text="-"
+                android:onClick="onClickSubtraction"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/btn_num_1"
+                style="@style/NumbersBtn"
+                android:text="1"
+                android:onClick="onClickNum1"/>
+
+            <Button
+                android:id="@+id/btn_num_2"
+                style="@style/NumbersBtn"
+                android:text="2"
+                android:onClick="onClickNum2"/>
+
+            <Button
+                android:id="@+id/btn_num_3"
+                style="@style/NumbersBtn"
+                android:text="3"
+                android:onClick="onClickNum3"/>
+
+            <Button
+                android:id="@+id/btn_adding"
+                style="@style/ActionBtn"
+                android:text="+"
+                android:onClick="onClickAdding"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/btn_point"
+                style="@style/NumbersBtn"
+                android:text="."
+                android:onClick="onClickPoint"/>
+
+            <Button
+                android:id="@+id/btn_num_0"
+                style="@style/NumbersBtn"
+                android:text="0"
+                android:onClick="onClickNum0"/>
+
+            <Button
+                android:id="@+id/btn_back"
+                style="@style/NumbersBtn"
+                android:text="back"
+                android:onClick="onClickBack"/>
+
+            <Button
+                android:id="@+id/btn_equal"
+                style="@style/EqualBtn"
+                android:text="="
+                android:onClick="onClickEqual"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>
