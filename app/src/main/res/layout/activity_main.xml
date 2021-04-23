@@ -14,7 +14,11 @@
         android:textSize="22sp"
         android:textColor="@color/lightBrown"
         android:layout_margin="10dp"
-        android:layout_height="125dp" />
+        android:layout_height="100dp"
+        android:maxHeight="125dp"
+        android:ellipsize="start"
+        android:maxLength="100"
+        android:gravity="end"/>
 
     <TextView
         android:id="@+id/tv_result"
@@ -22,7 +26,9 @@
         android:layout_height="75dp"
         android:textSize="26sp"
         android:layout_margin="10dp"
-        android:textColor="@color/lightBrown"/>
+        android:textColor="@color/lightBrown"
+        android:ellipsize="start"
+        android:gravity="end"/>
 
     <LinearLayout
         android:layout_width="match_parent"
